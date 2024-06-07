@@ -1,0 +1,210 @@
+/* SECTION HERO */
+.section-hero {
+  background-image: url(../images/Слой\ 9\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: calc(100px + 4rem);
+}
+.section__hero--content-container {
+  max-width: 780px;
+}
+.section__hero--slogan {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+}
+.section__hero--slogan > span {
+  color: var(--primary-color);
+}
+.hero__section--text {
+  margin: 80px 0;
+}
+.hero__section--text > p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.hero__section--text > ul > li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.hero__section--btn-container > button {
+  width: 183px;
+}
+.hero__section--btn-container > button:first-child {
+  margin-right: 30px;
+}
+
+/* ORDER-SECTION */
+.section-order {
+  background-image: url(../images/Слой\ 1\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section__order--container {
+  padding: 67px 20px;
+}
+.section__order--container > p {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 10px 0 50px 0;
+}
+
+.circles--container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 70px 0 80px 0;
+}
+.circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.circle-item > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--secondary-color);
+  background: var(--primary-color);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.circle-item > p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: center;
+}
+
+/* COMMENTS-SECTION */
+.section-comments {
+  padding: 40px 0;
+}
+.carousel-container {
+  max-width: 500px;
+  min-height: 315px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+h5.username {
+  color: #fff;
+  font-size: 28px;
+  margin: 15px 0 5px;
+}
+h6.proffession {
+  color: #bbb;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+input[type="radio"] {
+  position: absolute;
+  width: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+  height: 1px; /* Setting this to 0 make it invisible for VoiceOver */
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+label.comments-label {
+  display: block;
+  width: 32%;
+  border: 4px solid white;
+  position: absolute;
+  bottom: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s linear;
+}
+
+label.comments-label.second {
+  left: 34%;
+}
+label.comments-label.third {
+  left: 68%;
+}
+
+blockquote {
+  margin: 0;
+  padding: 20px;
+  max-width: 500px;
+  background-color: var(--secondary-color);
+  color: white;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: background-color 0.6s linear;
+}
+
+blockquote:after {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 100%;
+  border: solid transparent;
+  border-top-color: var(--secondary-color);
+  border-left-color: var(--secondary-color);
+  border-width: 10px;
+  left: 10%;
+}
+#second:checked ~ .two blockquote,
+#third:checked ~ .three blockquote {
+  background-color: var(--secondary-color);
+}
+.two blockquote:after {
+  border: solid transparent;
+  border-top-color: var(--secondary-color);
+  border-left-color: var(--secondary-color);
+  border-width: 10px;
+}
+.quotes {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 5em;
+}
+.leftq {
+  top: -25px;
+  left: 5px;
+}
+.rightq {
+  bottom: -10px;
+  right: 5px;
+}
+.slide img {
+  float: left;
+  margin-right: 20px;
+}
+.slide {
+  position: absolute;
+  left: -100%;
+  opacity: 0;
+  transition: all 0.6s ease-in;
+}
+
+#first:checked ~ label.first,
+#second:checked ~ label.second,
+#third:checked ~ label.third {
+  border-width: 6px;
+  border-color: var(--secondary-color);
+}
+
+#first:checked ~ div.one,
+#second:checked ~ div.two,
+#third:checked ~ div.three {
+  left: 0;
+  opacity: 1;
+}
