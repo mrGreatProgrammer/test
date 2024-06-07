@@ -192,6 +192,10 @@ footer.footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  transition: .3s;
+}
+.footer__nav--item:hover{
+  transform: scale(1.1);
 }
 .footer__nav--item > a {
   display: flex;
